@@ -1,4 +1,4 @@
 # dumpparser
 
 Split a SQL dump to parts.
-Create files *.parse with each table.
+Create a file *.parse for the each table.
