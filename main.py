@@ -16,7 +16,7 @@ def main():
         line = f.readline()
         while line:
             if 'INSERT INTO' in line:
-                current_insert = re.search('INSERT INTO `(.*)`', line).group(1)
+                current_insert = re.search('INSERT INTO `(.*)` ', line).group(1)
                 print(f"[+] New INSERT {current_insert}")
             if not current_insert:
                 write_line_to_file(line, 'info.part')
